@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/daily_point_calc_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_blue">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:gravity="center"
+        android:textSize="@dimen/daily_point_calc_text_size"
+        android:hint="@string/enter_username"
+        android:inputType="textFilter|textNoSuggestions"
+        android:textColorHint="@color/deep_grey"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="@dimen/daily_point_calc_top_margin"
+        android:background="@drawable/edit_text_input"
+        />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_gender"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/username"
+        android:background="@drawable/dropdown_drawable"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="male"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_down"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_gender"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:text="@string/enter_weight"
+                android:textSize="@dimen/daily_point_calc_text_size"/>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight_unit"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dropdown_drawable">
+
+                <TextView
+                    android:id="@+id/weight_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="kg"/>
+
+                <ImageView
+                    android:layout_toRightOf="@+id/weight_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_down"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="@dimen/daily_point_calc_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/default_value"
+                android:textColorHint="@color/deep_grey"
+                android:layout_toLeftOf="@+id/weight_unit"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/user_weight"
+                android:textSize="@dimen/daily_point_calc_text_size"
+                android:background="@drawable/edit_text_input"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:text="@string/enter_height"
+                android:textSize="@dimen/daily_point_calc_text_size"/>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/height_unit"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dropdown_drawable">
+
+                <TextView
+                    android:id="@+id/height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="kg"/>
+
+                <ImageView
+                    android:layout_toRightOf="@+id/height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_down"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="@dimen/daily_point_calc_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/default_value"
+                android:textColorHint="@color/deep_grey"
+                android:layout_toLeftOf="@+id/height_unit"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/user_height"
+                android:textSize="@dimen/daily_point_calc_text_size"
+                android:background="@drawable/edit_text_input"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:text="@string/enter_age"
+                android:textSize="@dimen/daily_point_calc_text_size"/>
+
+            <EditText
+                android:layout_width="@dimen/daily_point_calc_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/default_value"
+                android:textColorHint="@color/deep_grey"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:ems="10"
+                android:id="@+id/user_age"
+                android:textSize="@dimen/daily_point_calc_text_size"
+                android:background="@drawable/edit_text_input"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/daily_point_calc_text_size"
+            android:textColor="@color/white"
+            android:text="@string/submit_button"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

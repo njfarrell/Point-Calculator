@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Point Plus Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_edit">Edit</string>
+
+    <string name="enter_username">Enter your name</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="enter_age">Your age</string>
+    <string name="submit_button">Submit</string>
+    <string name="clear_button">Reset</string>
+    <string name="save_button">Save Points</string>
+    <string name="enter_height">Your height</string>
+    <string name="enter_weight">Your weight</string>
+    <string name="required_fields">Please fill in all fields first.</string>
+    <string name="default_value">0</string>
+    <string name="protein">Protein</string>
+    <string name="carbohydrate">Carbohydrate</string>
+    <string name="fat">Fat</string>
+    <string name="fiber">Fiber</string>
+    <string name="total_points">Total Points:</string>
+    <string name="placeholder">Placeholder Text</string>
+    <string name="calendar_button">View Calendar</string>
+    <string name="calculate_button">Calculate Food Points</string>
+    <string name="daily_point_description">Daily Points allowed:</string>
+    <string name="daily_bmi_description">Body Mass Index:</string>
+    <string name="calendar_point_value_default">0 Points</string>
+    <string name="no_calculation">Need to first calculate points.</string>
+
+    <string-array name="gender_array">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="units_of_weight_food">
+        <item>g</item>
+        <item>kg</item>
+        <item>oz</item>
+        <item>lb</item>
+    </string-array>
+    <string-array name="units_of_weight_person">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+    <string-array name="units_of_height_person">
+        <item>m</item>
+        <item>in</item>
+        <item>ft</item>
+    </string-array>
+
+</resources>

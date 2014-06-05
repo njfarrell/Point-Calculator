@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/day_view_header_text_size"/>
+
+    <TextView
+        android:id="@+id/day_point_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/day_view_margin_top"
+        android:layout_below="@+id/date_header"
+        android:gravity="center"
+        android:text="Total Points: 0"
+        android:textSize="@dimen/day_view_text_size"/>
+
+    <Button
+        android:id="@+id/calculate_food_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/day_view_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/day_view_margin_bot"
+        android:text="Calculate Food Points"
+        />
+
+    <ListView
+        android:id="@+id/day_point_values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/day_point_value"
+        android:layout_above="@+id/calculate_food_points"
+        />
+
+</RelativeLayout>

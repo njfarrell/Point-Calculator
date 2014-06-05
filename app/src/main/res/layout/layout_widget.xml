@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/food_calculator_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_margin="4dp"
+    android:background="@color/widget_transparent_black"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/carbs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/carb_drawable">
+
+        <TextView
+            android:id="@+id/carbs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Total Carbs"
+            android:gravity="center_vertical|left"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/carbs_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/carbs_unit"
+            android:layout_alignBaseline="@id/carbs_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/carbs_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/carbs_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="g"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/fat_drawable">
+
+        <TextView
+            android:id="@+id/fat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Fat"
+            android:gravity="center_vertical|left"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fat_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/fat_unit"
+            android:layout_alignBaseline="@id/fat_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/fat_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/fat_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="g"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/protein_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/protein_drawable">
+
+        <TextView
+            android:id="@+id/protein_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Protein"
+            android:gravity="center_vertical|left"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/protein_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/protein_unit"
+            android:layout_alignBaseline="@id/protein_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/protein_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/protein_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="g"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fiber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/fiber_drawable">
+
+        <TextView
+            android:id="@+id/fiber_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Fiber"
+            android:gravity="center_vertical|left"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/fiber_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/fiber_unit"
+            android:layout_alignBaseline="@id/fiber_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/fiber_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/fiber_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="g"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/total_background">
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Total Points"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/total_unit"
+            android:layout_alignBaseline="@id/total_text"
+            android:textSize="14dp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/total_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/total_text"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:text="g"
+            android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

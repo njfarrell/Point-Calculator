@@ -1,0 +1,12 @@
+<layer-list
+xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+   <item android:drawable="@drawable/account_options_rectangle_shadow"
+       android:top="4px"
+       android:left="4px" />
+   <item
+     android:drawable="@drawable/account_options_rectangle"
+     android:bottom="4px"
+     android:right="4px"/>
+ 
+</layer-list>
